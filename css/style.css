@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* --- ИЗМЕНЕНИЕ: Более светлый и нежный фон --- */
+    background: linear-gradient(to bottom, #fde7ea, #fdf2f4);
+    font-family: 'Roboto', sans-serif;
+    perspective: 1000px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.birthday-card {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    height: 580px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.birthday-card:hover {
+    transform: rotateY(-180deg);
+}
+
+.card-front, .card-inside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1); /* Сделаем тень чуть мягче */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card-front {
+    background-color: #ff80ab;
+    color: white;
+    z-index: 2;
+    transform: rotateY(0deg);
+    padding: 0 20px;
+}
+
+.happy-birthday {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.balloons {
+    display: flex;
+    margin: 20px 0;
+}
+
+.balloon {
+    width: 25px;
+    height: 35px;
+    background-color: #f8b400;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.balloon:nth-child(2) { background-color: #83d8ae; }
+.balloon:nth-child(3) { background-color: #7c83fd; }
+.balloon:nth-child(4) { background-color: #ff7675; }
+
+.click-to-open {
+    margin-top: 30px;
+    font-weight: 300;
+    background-color: rgba(255,255,255,0.2);
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+
+/* --- ИЗМЕНЕНИЕ: Обновленные стили для внутренней части --- */
+
+.card-inside {
+    background-color: #ffffff; /* Делаем карточку белой */
+    color: #333;
+    transform: rotateY(180deg);
+    justify-content: center;
+    padding: 40px 30px; /* Добавляем внутренние отступы */
+}
+
+.inside-title {
+    font-family: 'Lobster', cursive;
+    color: #e91e63;
+    font-size: 2.8em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    margin: 0 0 25px 0; /* Убираем отрицательный отступ */
+}
+
+/* Стили для параграфов внутри белой карточки */
+.card-inside p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    max-width: 300px; /* Ограничим ширину текста для лучшей читаемости */
+}
+
+.signature {
+    margin-top: 15px;
+    margin-bottom: 30px; /* Увеличим отступ до кнопки */
+    font-weight: bold;
+}
+
+.reasons-button {
+    background-color: #ff80ab;
+    color: white;
+    text-decoration: none;
+    /* --- ИЗМЕНЕНИЕ: Делаем кнопку меньше --- */
+    padding: 12px 25px;
+    font-size: 0.95em;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(233, 30, 99, 0.3);
+}
+
+.reasons-button:hover {
+    background-color: #e91e63;
+    transform: scale(1.05);
+}
+
+
+/* Адаптация для мобильных */
+@media (max-width: 400px) {
+    .happy-birthday {
+        font-size: 2.5em;
+    }
+
+    .birthday-card {
+        height: 550px;
+    }
+
+    .inside-title {
+        font-size: 2.4em;
+    }
+
+    .card-inside p {
+        font-size: 1em;
+    }
+}
