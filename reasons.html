@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>58 причин нашей любви!</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Подключаем основные стили -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400&display=swap');
+
+        body {
+            background-color: #fdf6f9;
+            background-image: linear-gradient(180deg, #fdf6f9 0%, #f5eef4 100%);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .reasons-container {
+            background-color: transparent;
+            max-width: 1000px;
+            margin: 20px auto; /* Уменьшим верхний отступ */
+            padding: 15px; /* Уменьшим боковые отступы */
+            box-shadow: none;
+        }
+
+        .reasons-container h1 {
+            font-family: 'Lobster', cursive;
+            color: #c56ea4;
+            text-align: center;
+            font-size: 3.5em;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .reasons-list {
+            list-style-type: none;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px; /* Немного уменьшим расстояние */
+        }
+
+        .reasons-list li {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 15px 20px; /* Уменьшим внутренние отступы */
+            box-shadow: 0 4px 15px rgba(100, 100, 100, 0.08);
+            display: flex;
+            align-items: center; /* Выравниваем по центру */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 6px solid #e1aed1;
+        }
+
+        .reasons-list li:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(100, 100, 100, 0.12);
+        }
+
+        .reasons-list li::before {
+            content: attr(data-number);
+            font-weight: bold;
+            color: #c56ea4;
+            font-size: 2em;
+            font-family: 'Lobster', cursive;
+            margin-right: 20px;
+            transform: translateY(-2px); /* Скорректировали положение */
+        }
+
+        .reason-text {
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        @media (min-width: 768px) {
+            .reasons-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px; /* Возвращаем гэп для больших экранов */
+            }
+        }
+
+        /* --- ИЗМЕНЕНИЕ: Уменьшаем заголовок на мобильных --- */
+        @media (max-width: 480px) {
+            .reasons-container h1 {
+                font-size: 2.8em;
+                margin-bottom: 30px;
+            }
+            .reason-text {
+                font-size: 1em; /* Уменьшаем текст причин */
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="reasons-container">
+    <h1>58 причин, почему мы тебя любим!</h1>
+    <ol class="reasons-list">
+        <!-- Здесь ваш полный список из 58 причин, он остается без изменений -->
+        <li data-number="1"><span class="reason-text">За твою бесконечную доброту.</span></li>
+        <li data-number="2"><span class="reason-text">За самые вкусные в мире пирожки.</span></li>
+        <li data-number="3"><span class="reason-text">За то, что ты всегда нас поддерживаешь.</span></li>
+        <li data-number="4"><span class="reason-text">За твои мудрые советы.</span></li>
+        <li data-number="5"><span class="reason-text">За твою лучезарную улыбку.</span></li>
+        <li data-number="6"><span class="reason-text">За твое огромное сердце.</span></li>
+        <li data-number="7"><span class="reason-text">За то, что научила нас быть сильными.</span></li>
+        <li data-number="8"><span class="reason-text">За уют, который ты создаешь вокруг себя.</span></li>
+        <li data-number="9"><span class="reason-text">За твои теплые объятия.</span></li>
+        <li data-number="10"><span class="reason-text">За твои сказки на ночь.</span></li>
+        <li data-number="11"><span class="reason-text">За твое терпение и понимание.</span></li>
+        <li data-number="12"><span class="reason-text">За твои золотые руки.</span></li>
+        <li data-number="13"><span class="reason-text">За твои смешные истории из детства.</span></li>
+        <li data-number="14"><span class="reason-text">За твою заботу о каждом из нас.</span></li>
+        <li data-number="15"><span class="reason-text">За то, что ты всегда находишь нужные слова.</span></li>
+        <li data-number="16"><span class="reason-text">За твои вкусные вареники и борщ.</span></li>
+        <li data-number="17"><span class="reason-text">За то, что ты умеешь слушать.</span></li>
+        <li data-number="18"><span class="reason-text">За твое чувство юмора.</span></li>
+        <li data-number="19"><span class="reason-text">За твои добрые глаза.</span></li>
+        <li data-number="20"><span class="reason-text">За то, что ты всегда рядом, даже на расстоянии.</span></li>
+        <li data-number="21"><span class="reason-text">За твои песни, которые мы помним с детства.</span></li>
+        <li data-number="22"><span class="reason-text">За твои советы, которые помогают в жизни.</span></li>
+        <li data-number="23"><span class="reason-text">За то, что ты веришь в нас.</span></li>
+        <li data-number="24"><span class="reason-text">За твои теплые письма и открытки.</span></li>
+        <li data-number="25"><span class="reason-text">За то, что ты умеешь делать праздник из обычного дня.</span></li>
+        <li data-number="26"><span class="reason-text">За твое умение находить радость в мелочах.</span></li>
+        <li data-number="27"><span class="reason-text">За твои рукодельные подарки.</span></li>
+        <li data-number="28"><span class="reason-text">За то, что ты всегда ждешь нас с любовью.</span></li>
+        <li data-number="29"><span class="reason-text">За твои добрые напутствия.</span></li>
+        <li data-number="30"><span class="reason-text">За то, что ты научила нас уважать других.</span></li>
+        <li data-number="31"><span class="reason-text">За твои теплые пледы и носки.</span></li>
+        <li data-number="32"><span class="reason-text">За то, что ты умеешь прощать.</span></li>
+        <li data-number="33"><span class="reason-text">За твои семейные рецепты.</span></li>
+        <li data-number="34"><span class="reason-text">За то, что ты хранишь семейные традиции.</span></li>
+        <li data-number="35"><span class="reason-text">За твое умение объединять семью.</span></li>
+        <li data-number="36"><span class="reason-text">За то, что ты всегда находишь время для нас.</span></li>
+        <li data-number="37"><span class="reason-text">За твои добрые сказки и легенды.</span></li>
+        <li data-number="38"><span class="reason-text">За то, что ты умеешь делать нас счастливыми.</span></li>
+        <li data-number="39"><span class="reason-text">За твое спокойствие и мудрость.</span></li>
+        <li data-number="40"><span class="reason-text">За то, что ты всегда на нашей стороне.</span></li>
+        <li data-number="41"><span class="reason-text">За твои теплые чаепития.</span></li>
+        <li data-number="42"><span class="reason-text">За то, что ты умеешь делать дом уютным.</span></li>
+        <li data-number="43"><span class="reason-text">За твои добрые взгляды и ласковые слова.</span></li>
+        <li data-number="44"><span class="reason-text">За то, что ты всегда помнишь наши дни рождения.</span></li>
+        <li data-number="45"><span class="reason-text">За твое умение быть настоящей.</span></li>
+        <li data-number="46"><span class="reason-text">За то, что ты нас вдохновляешь.</span></li>
+        <li data-number="47"><span class="reason-text">За твои добрые молитвы за нас.</span></li>
+        <li data-number="48"><span class="reason-text">За то, что ты умеешь быть сильной в трудные моменты.</span></li>
+        <li data-number="49"><span class="reason-text">За твое умение видеть хорошее в людях.</span></li>
+        <li data-number="50"><span class="reason-text">За то, что ты нас балуешь.</span></li>
+        <li data-number="51"><span class="reason-text">За твои добрые советы по жизни.</span></li>
+        <li data-number="52"><span class="reason-text">За то, что ты всегда честна с нами.</span></li>
+        <li data-number="53"><span class="reason-text">За твое умение быть примером для нас.</span></li>
+        <li data-number="54"><span class="reason-text">За то, что ты умеешь любить без условий.</span></li>
+        <li data-number="55"><span class="reason-text">За то, что ты умеешь делать нас лучше.</span></li>
+        <li data-number="56"><span class="reason-text">За то, что ты всегда нас ждешь.</span></li>
+        <li data-number="57"><span class="reason-text">За твое бесконечное тепло и свет.</span></li>
+        <li data-number="58"><span class="reason-text">За то, что ты просто есть у нас!</span></li>
+    </ol>
+</div>
+</body>
+</html>
